@@ -1,4 +1,4 @@
-# fall19cmps312-B01-LabContent
+# fall19cmps312-B51-LabContent
 
 # android-resources
 A list of essential projects for Android developers
