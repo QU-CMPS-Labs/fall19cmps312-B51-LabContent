@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ActivityLifecycleDemo”</string>
+    <string name="go_to_second_activity">Go To Second Activity</string>
+    <string name="finish">FINISH</string>
+</resources>
