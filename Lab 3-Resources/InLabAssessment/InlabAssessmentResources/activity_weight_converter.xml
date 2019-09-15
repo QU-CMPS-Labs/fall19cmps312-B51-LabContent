@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WeightConverter"
+    tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
+        android:layout_marginEnd="7dp"
+        android:text="Kg"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="84dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="82dp"
+        android:text="Pound"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/button2"
+        app:layout_constraintEnd_toStartOf="@+id/pound_edt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/kg_edt" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="27dp"
+        android:text="Weight Converter"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/kg_edt"
+        app:layout_constraintStart_toStartOf="@+id/kg_edt" />
+
+    <EditText
+        android:id="@+id/kg_edt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginEnd="4dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/pound_edt"
+        app:layout_constraintEnd_toEndOf="@+id/pound_edt" />
+
+    <EditText
+        android:id="@+id/pound_edt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="205dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/convert_btn"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="38dp"
+        android:onClick="convertWeight"
+        android:text="Convert"
+        app:layout_constraintEnd_toEndOf="@+id/pound_edt"
+        app:layout_constraintStart_toStartOf="@+id/kg_edt"
+        app:layout_constraintTop_toBottomOf="@+id/pound_edt" />
+
+</android.support.constraint.ConstraintLayout>

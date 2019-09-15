@@ -1,0 +1,18 @@
+<resources>
+
+    <string name="app_name">Quran App</string>
+    <string name="chapters_value_chapters_value">Chapters_Value Chapters_Value</string>
+    <string name="chapters">Chapters :</string>
+    <string name="year">Year :</string>
+    <string name="_1998">1998</string>
+    <string name="name">Name :</string>
+    <string name="the_holy_quran">THE HOLY QURAN</string>
+    <string name="quranimage">Quran Image</string>
+
+    <string-array name="chapters_array">
+        <item>Al-Baqarah</item>
+        <item>Al-Imran</item>
+        <item>An-Nisa</item>
+        <item>Al-Maidah</item>
+    </string-array>
+</resources>
