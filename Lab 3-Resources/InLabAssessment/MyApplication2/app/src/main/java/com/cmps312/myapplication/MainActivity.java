@@ -18,9 +18,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void increment(View view) {
-
         TextView tv = findViewById(R.id.textView);
+        if (i == names.length)
+            tv.setText("Show score");
+
         tv.setText(names[i]);
-        i++;
+
+
     }
 }
