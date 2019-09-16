@@ -6,7 +6,10 @@
     </shared>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9f6da666-a59c-4f51-91ef-e8f2fd47b6b6" name="Default Changelist" comment="" />
+    <list default="true" id="9f6da666-a59c-4f51-91ef-e8f2fd47b6b6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../InLabAssessment/BMICalc/app/src/main/java/com/cmps312/bmicalc/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../InLabAssessment/BMICalc/app/src/main/java/com/cmps312/bmicalc/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,9 +53,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
-    <option name="y" value="23" />
-    <option name="width" value="1407" />
-    <option name="height" value="977" />
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -218,10 +220,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1600" height="1000" extended-state="6" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" visible="true" weight="0.1745828" />
+      <window_info active="true" content_ui="combo" id="Project" visible="true" weight="0.19456366" />
       <window_info id="Structure" side_tool="true" />
       <window_info id="Build Variants" side_tool="true" />
       <window_info id="Image Layers" />
@@ -239,7 +241,7 @@
       <window_info anchor="bottom" id="Android Profiler" />
       <window_info anchor="bottom" id="Debug" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Build" visible="true" weight="0.1786108" />
+      <window_info anchor="bottom" id="Build" visible="true" weight="0.2007435" />
       <window_info anchor="bottom" id="Terminal" />
       <window_info anchor="right" id="Device File Explorer" side_tool="true" />
       <window_info anchor="right" id="Capture Analysis" />
