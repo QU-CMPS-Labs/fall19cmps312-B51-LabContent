@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         Log.d("TAG", "rollDice: " + rolled);
-        diceFaceImg.setImageResource(diceFaces[rolled - 1]);
+        diceFaceImg.setImageResource(R.drawable.ic_dice_six_faces_one);
 
 
         if (turn == 1) {
