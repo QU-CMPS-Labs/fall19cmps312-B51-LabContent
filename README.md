@@ -3,7 +3,7 @@
 # android-resources
 A list of essential projects for Android developers
 
-## UI Resources
+## UI Resources-
 
 ### Frameworks
 * [scoop](https://github.com/lyft/scoop) a micro framework for building view based modular Android applications from Lyft
