@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">BMICalc</string>
+    <string name="weight_converter">Weight Converter</string>
+    <string name="bmi_calculator">BMI Calculator</string>
+    <string name="choose">Choose</string>
+    <string name="open">Open</string>
+    <string name="kg">Kg</string>
+    <string name="pound">Pound</string>
+</resources>
