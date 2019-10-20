@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
         getSupportFragmentManager()
                 .beginTransaction()
                 .add(R.id.fragment_holder, fragmentTwo)
+                .addToBackStack(null)
                 .commit();
     }
 }
