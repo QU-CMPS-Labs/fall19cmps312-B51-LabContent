@@ -15,7 +15,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        MyFragmentTwo fragmentTwo = MyFragmentTwo.newInstance();
+
+        MyFragmentTwo fragmentTwo = MyFragmentTwo.newInstance("Message from activity : Hello");
 
         frameLayout = findViewById(R.id.fragment_holder);
 
@@ -32,9 +33,7 @@ public class MainActivity extends AppCompatActivity {
 
         //dynamically adding fragment
 
-        //Step 1. Declare fragment
-        MyFragmentTwo fragmentTwo = new MyFragmentTwo();
-
+        MyFragmentTwo fragmentTwo = MyFragmentTwo.newInstance("bla bla bla");
 
         //step 2. use transaction to inject the fragment
         getSupportFragmentManager()

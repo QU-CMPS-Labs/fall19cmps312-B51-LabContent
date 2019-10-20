@@ -8,6 +8,7 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 
 /**
@@ -37,8 +38,14 @@ public class MyFragmentTwo extends Fragment {
         // Inflate the layout for this fragment
 
         String message = getArguments().getString("message");
+
+        View rootView = inflater.inflate(R.layout.fragment_two, container, false);
         
-        return inflater.inflate(R.layout.fragment_two, container, false);
+        TextView tv = rootView.findViewById(R.id.fragment_two_tv);
+
+        tv.setText(message);
+
+        return rootView;
     }
 
 }
