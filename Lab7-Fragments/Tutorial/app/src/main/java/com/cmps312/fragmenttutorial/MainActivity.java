@@ -1,5 +1,6 @@
 package com.cmps312.fragmenttutorial;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.FrameLayout;
@@ -41,5 +42,10 @@ public class MainActivity extends AppCompatActivity {
                 .add(R.id.fragment_holder, fragmentTwo)
                 .addToBackStack(null)
                 .commit();
+    }
+
+    public void openSecond(View view) {
+        Intent intent = new Intent(this, SecondActivity.class);
+        startActivity(intent);
     }
 }

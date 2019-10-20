@@ -9,12 +9,20 @@
     <fragment
         android:id="@+id/fragment_one"
         class="com.cmps312.fragmenttutorial.MyFragmentOne"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="422dp"
+        android:layout_height="610dp"
+        tools:layout="@layout/fragment_one" />
+
+    <Button
+        android:id="@+id/open"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Open Second"
+        android:onClick="openSecond"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout="@layout/fragment_one" />
+        app:layout_constraintTop_toBottomOf="@+id/fragment_one"
+        app:layout_constraintVertical_bias="0.809" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
