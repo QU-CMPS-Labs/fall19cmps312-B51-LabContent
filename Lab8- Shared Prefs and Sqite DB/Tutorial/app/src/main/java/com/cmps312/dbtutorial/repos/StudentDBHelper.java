@@ -6,7 +6,6 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 public class StudentDBHelper extends SQLiteOpenHelper implements StudentContract {
 
-
     //STEP 1
     private static final String DB_NAME = "students.db";
     private static final int VERSION = 1;
@@ -16,12 +15,14 @@ public class StudentDBHelper extends SQLiteOpenHelper implements StudentContract
 
     //CREATE TABLE STUDENT ("_ID INTEGER PRMARY KEY , NAME TEXT");
     private static final String SQL_CREATE_TABLE_STUDENT =
-            "CREATE TABLE "+ StudentTable.TABLE_NAME
+            "CREATE TABLE " + StudentTable.TABLE_NAME
                     + "( "
-                    + StudentTable._ID +" INTEGER PRIMARY KEY AUTOINCREMENT, "
-                    + StudentTable.COLUMN_NAME_STUDENT_NAME +" TEXT "
-                    + ");" ;
+                    + StudentTable._ID + " INTEGER PRIMARY KEY AUTOINCREMENT, "
+                    + StudentTable.COLUMN_NAME_STUDENT_NAME + " TEXT "
+                    + ");";
 
+    private static final String SQL_DROP_TABLE_STUDENT =
+            "DROP TABLE IF EXISTS " + StudentTable.TABLE_NAME;
 
     public StudentDBHelper(Context context) {
         super(context, DB_NAME, null, VERSION);
@@ -35,7 +36,27 @@ public class StudentDBHelper extends SQLiteOpenHelper implements StudentContract
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-
         //drop and recreate
+        db.execSQL(SQL_DROP_TABLE_STUDENT);
+        onCreate(db);
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
