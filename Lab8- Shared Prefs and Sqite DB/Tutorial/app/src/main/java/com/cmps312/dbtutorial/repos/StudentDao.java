@@ -33,37 +33,45 @@ public class StudentDao implements StudentContract {
         return db.insert(StudentTable.TABLE_NAME, null, values);
 
     }
+
     public Student getStudent(String name) {
         //step 1. to open the database for reading
 
         db = dbHelper.getReadableDatabase();
 
-        String columns[] = {StudentTable._ID, StudentTable.COLUMN_NAME_STUDENT_NAME};
-        String selection = StudentTable.COLUMN_NAME_STUDENT_NAME + " = ?";
-        String selectionArgs[] = {name};
+        String columns[] = {StudentTable.COLUMN_NAME_STUDENT_NAME};
+        String selection = StudentTable._ID + " = ?";
+        String selectionArgs[] = {String.valueOf(6)};
         Cursor cursor = db.query(StudentTable.TABLE_NAME, columns, selection, selectionArgs, null, null, null, null);
 
+
+//        Cursor cursor = db.rawQuery("SELECT " + StudentTable.COLUMN_NAME_STUDENT_NAME
+//                + " FROM " +StudentTable.TABLE_NAME
+//                + " WHERE " + StudentTable.COLUMN_NAME_STUDENT_NAME + " LIKE " + name , null);
         if (cursor.moveToFirst())
             return changeCtoS(cursor);
         return null;
     }
 
-    public Student changeCtoS(Cursor cursor){
+    public Student changeCtoS(Cursor cursor) {
+        Log.d("TAGUIR", "changeCtoS: " + cursor.getInt(cursor.getColumnIndex(StudentTable._ID)));
+
         return new Student(cursor.getString(cursor.getColumnIndex(StudentTable.COLUMN_NAME_STUDENT_NAME)));
     }
-    public ArrayList<Student> getStudent(){
 
-        String rawQuery = "SELECT * FROM "+ StudentTable.TABLE_NAME;
+    public ArrayList<Student> getAllStudent() {
+
+        String rawQuery = "SELECT * FROM " + StudentTable.TABLE_NAME;
 
         db = dbHelper.getReadableDatabase();
 
-        Cursor cursor = db.rawQuery(rawQuery , null);
+        Cursor cursor = db.rawQuery(rawQuery, null);
 
         ArrayList<Student> students = new ArrayList<>();
-        if(cursor.moveToFirst()){
-            do{
+        if (cursor.moveToFirst()) {
+            do {
                 students.add(changeCtoS(cursor));
-            }while(cursor.moveToNext());
+            } while (cursor.moveToNext());
         }
 
         return students;
