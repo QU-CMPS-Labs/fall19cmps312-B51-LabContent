@@ -47,7 +47,7 @@ public class MainScreen extends AppCompatActivity {
                 runInRunnable(100);
                 break;
             case R.id.async_btn:
-                new RunUsingAsync(this).execute(100);
+//                new RunUsingAsync(this).execute(100);
                 break;
         }
     }
