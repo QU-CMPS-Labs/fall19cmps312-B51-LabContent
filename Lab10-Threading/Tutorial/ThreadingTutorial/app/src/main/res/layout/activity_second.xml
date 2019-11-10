@@ -4,15 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".SecondActivity">
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="128dp"
-        android:layout_marginEnd="7dp"
-        android:onClick="startThread"
+        android:layout_marginEnd="60dp"
+        android:onClick="startAsyncThread"
         android:text="@string/start"
         app:layout_constraintEnd_toStartOf="@+id/button2"
         app:layout_constraintTop_toBottomOf="@+id/display_tv" />
@@ -23,7 +23,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="128dp"
         android:layout_marginEnd="78dp"
-        android:onClick="stopThread"
+        android:onClick="stopAsyncThread"
         android:text="@string/stop"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/display_tv" />
