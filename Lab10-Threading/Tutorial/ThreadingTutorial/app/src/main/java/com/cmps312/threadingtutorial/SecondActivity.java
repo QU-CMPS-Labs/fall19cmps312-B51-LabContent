@@ -18,8 +18,6 @@ public class SecondActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
-
-
     }
 
     public void startAsyncThread(View view) {
@@ -33,7 +31,6 @@ public class SecondActivity extends AppCompatActivity {
     }
 
     static class DownloadStuffAsync extends AsyncTask<Integer, Integer, String> {
-
         private WeakReference<SecondActivity> activityWeakReference;
 
         public DownloadStuffAsync(SecondActivity context){
