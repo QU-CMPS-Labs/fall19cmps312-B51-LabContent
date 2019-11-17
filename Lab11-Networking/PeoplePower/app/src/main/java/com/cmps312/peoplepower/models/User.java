@@ -39,7 +39,7 @@ public class User {
         this.email = email;
     }
 
-    public class Picture{
+    public class Picture {
         String large;
 
         public String getLarge() {
@@ -51,7 +51,7 @@ public class User {
         }
     }
 
-    public class Name{
+    public class Name {
         String title;
         String first;
         String last;
@@ -78,6 +78,11 @@ public class User {
 
         public void setLast(String last) {
             this.last = last;
+        }
+
+        @Override
+        public String toString() {
+            return title + " " + first + " " + last;
         }
     }
 }
