@@ -8,6 +8,9 @@ import android.widget.Toast;
 
 import com.cmps312.peoplepower.httpRequests.UserClient;
 import com.cmps312.peoplepower.models.Result;
+import com.cmps312.peoplepower.models.User;
+
+import java.util.ArrayList;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -43,7 +46,12 @@ public class MainActivity extends AppCompatActivity {
         call.enqueue(new Callback<Result>() {
             @Override
             public void onResponse(Call<Result> call, Response<Result> response) {
-                Toast.makeText(MainActivity.this, "success", Toast.LENGTH_SHORT).show();
+
+                Result result = response.body();
+                ArrayList<User> users = result.getUsers();
+
+
+                Toast.makeText(MainActivity.this, users.get(0).getEmail(), Toast.LENGTH_SHORT).show();
             }
 
             @Override
@@ -53,3 +61,25 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

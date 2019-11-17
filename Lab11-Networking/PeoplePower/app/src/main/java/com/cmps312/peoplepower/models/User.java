@@ -1,6 +1,6 @@
 package com.cmps312.peoplepower.models;
 
-class User {
+public class User {
     private String gender;
     private String email;
 
