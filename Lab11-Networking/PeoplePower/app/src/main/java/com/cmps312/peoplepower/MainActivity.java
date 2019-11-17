@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
                 ArrayList<User> users = result.getUsers();
 
 
-                Toast.makeText(MainActivity.this, users.get(0).getEmail(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, users.get(0).getPicture().getLarge(), Toast.LENGTH_SHORT).show();
             }
 
             @Override
