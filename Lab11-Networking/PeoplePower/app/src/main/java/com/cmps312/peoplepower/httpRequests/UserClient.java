@@ -13,5 +13,6 @@ public interface UserClient {
     String BASE_URL = "https://randomuser.me";
 
     @GET("/api/")
-    Call<Result> getUsers(@Query("results") String results, @Query("format") String format);
+    Call<Result> getUsers(@Query("results") String results,
+                          @Query("format") String format);
 }
